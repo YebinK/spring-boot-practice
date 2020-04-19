@@ -3,8 +3,10 @@ package springboot.config.auth.dto;
 import lombok.Getter;
 import springboot.domain.user.User;
 
+import java.io.Serializable;
+
 @Getter
-public class SessionUser { //인증된 사용자 정보
+public class SessionUser implements Serializable { //인증된 사용자 정보
     private String name;
     private String email;
     private String picture;
