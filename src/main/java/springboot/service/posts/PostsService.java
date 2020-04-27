@@ -16,7 +16,7 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 @Service
 public class PostsService {
-    
+
     private final PostsRepository postsRepository; //JpaRepository 를 상속받은 인터페이스
 
     @Transactional
